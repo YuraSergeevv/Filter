@@ -1,4 +1,4 @@
-  
+$(document).ready(function(){ 
 const rangeSlider = document.getElementById('range-slider');
 
 if (rangeSlider) {
@@ -36,3 +36,21 @@ if (rangeSlider) {
 		});
 	});
 }
+
+$('.filter__bth').on('click',function(){
+	$('.filter').addClass('active')
+})
+
+$('.filter__close').on('click',function(){
+	$('.filter').removeClass('active')
+
+})
+
+$(document).mouseup(function (e) {
+    var container = $(".active");
+    if (container.has(e.target).length === 0){
+        $('.filter').removeClass('active')
+    }
+});
+
+});
