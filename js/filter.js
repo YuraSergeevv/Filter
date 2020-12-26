@@ -50,11 +50,9 @@ $(document).mouseup(function (e) {
     var container = $(".filter__wrapper");
     if (container.has(e.target).length === 0){
 		$('.filter').removeClass('active')
-		console.log("1")
 	}
-	else{
-		console.log("0")
-	}
+	
+
 });
 
 });
